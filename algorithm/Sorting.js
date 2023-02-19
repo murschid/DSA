@@ -16,7 +16,7 @@ class Sorting {
 	}
 
 	insertionSort(arr) {
-
+		// TODO
 		return arr;
 	}
 
@@ -36,7 +36,7 @@ class Sorting {
 	}
 
 	mergeSort(arr) {
-
+		// TODO
 		return arr;
 	}
 }
