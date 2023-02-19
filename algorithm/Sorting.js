@@ -40,5 +40,10 @@ class Sorting {
 		return arr;
 	}
 }
+
 const sort = new Sorting();
-console.log(sort.quickSort([1, 4, 6, 3, 2]));
+export default sort;
+
+// let input = [1, 4, 6, 3, 2];
+// console.log(sort.bubbleSort(input));
+// console.log(sort.quickSort(input));
