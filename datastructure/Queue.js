@@ -1,35 +1,35 @@
 //by Array
 class QueueA {
-    constructor() {
-        this.item = [];
-    }
+	constructor() {
+		this.item = [];
+	}
 
-    enqueue(element) {
-        this.item.push(element);
-    }
+	enqueue(element) {
+		this.item.push(element);
+	}
 
-    dequeue() {
-        return this.item.shift();
-    }
+	dequeue() {
+		return this.item.shift();
+	}
 
-    isEmpty() {
-        return this.item.length === 0;
-    }
+	isEmpty() {
+		return this.item.length === 0;
+	}
 
-    peek() {
-        if(!this.isEmpty()) {
-            return this.item[0];
-        }
-        return null;
-    }
+	peek() {
+		if (!this.isEmpty()) {
+			return this.item[0];
+		}
+		return null;
+	}
 
-    size() {
-        return this.item.length;
-    }
+	size() {
+		return this.item.length;
+	}
 
-    print() {
-        console.log(this.item.toString());
-    }
+	print() {
+		console.log(this.item.toString());
+	}
 }
 
 //const queue = new QueueA();
@@ -44,39 +44,39 @@ class QueueA {
 
 //by Object
 class QueueB {
-    constructor() {
-        this.item = {};
-        this.first = 0;
-        this.last = 0;
-    }
+	constructor() {
+		this.item = {};
+		this.first = 0;
+		this.last = 0;
+	}
 
-    enqueue(element) {
-        this.item[this.last] = element;
-        this.last++;
-    }
+	enqueue(element) {
+		this.item[this.last] = element;
+		this.last++;
+	}
 
-    dequeue() {
-        if(!this.isEmpty()) {
-            delete this.item[this.first];
-            this.first++;
-        }
-    }
+	dequeue() {
+		if (!this.isEmpty()) {
+			delete this.item[this.first];
+			this.first++;
+		}
+	}
 
-    isEmpty() {
-        return (this.last - this.first) === 0;
-    }
+	isEmpty() {
+		return (this.last - this.first) === 0;
+	}
 
-    peek() {
-        return this.item[this.first];
-    }
+	peek() {
+		return this.item[this.first];
+	}
 
-    size() {
-        return (this.last - this.first);
-    }
+	size() {
+		return (this.last - this.first);
+	}
 
-    print() {
-        console.log(this.item);
-    }
+	print() {
+		console.log(this.item);
+	}
 }
 
 const queueB = new QueueB();
