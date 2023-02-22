@@ -16,7 +16,17 @@ class Sorting {
 	}
 
 	insertionSort(arr) {
-		// TODO
+		for(let i = 0; i < arr.length; i++) {
+			let lowest = i;
+			for(let j = i + 1; j < arr.length; j++) {
+				if(lowest > j) {
+					lowest = j;
+				}
+			}
+			let temp = arr[i];
+			arr[i] = lowest;
+			lowest = temp;
+		}
 		return arr;
 	}
 
@@ -47,3 +57,4 @@ export default sort;
 // let input = [1, 4, 6, 3, 2];
 // console.log(sort.bubbleSort(input));
 // console.log(sort.quickSort(input));
+// console.log(sort.insertionSort(input));
