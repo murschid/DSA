@@ -15,18 +15,29 @@ class Sorting {
 		return arr;
 	}
 
-	insertionSort(arr) {
-		for(let i = 0; i < arr.length; i++) {
+	selectionSort(arr) {
+		for (let i = 0; i < arr.length; i++) {
 			let lowest = i;
-			for(let j = i + 1; j < arr.length; j++) {
-				if(arr[j] < arr[lowest]) {
+			for (let j = i + 1; j < arr.length; j++) {
+				if (arr[j] < arr[lowest]) {
 					lowest = j;
 				}
 			}
-			if(i !== lowest) {
-				let temp = arr[i];
-				arr[i] = arr[lowest];
-				arr[lowest] = temp;
+			if (i !== lowest) {
+				[arr[i], arr[lowest]] = [arr[lowest], arr[i]];
+			}
+		}
+		return arr;
+	}
+
+	insertionSort(arr) {
+		for (let i = 1; i < arr.length; i++) {
+			for (let j = i; j > 0; j--) {
+				if (arr[j] < arr[j - 1]) {
+					[arr[j], arr[j - 1]] = [arr[j - 1], arr[j]];
+				} else {
+					break;
+				}
 			}
 		}
 		return arr;
