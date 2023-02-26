@@ -25,14 +25,16 @@ This repository contains a collection of JavaScript data structures and algorith
 
 ---
 
-## Getting Started
+### Getting Started
 Clone the repository to your local machine
-bash
+
+```bash
 git clone https://github.com/murschid/DSA.git
-
+```
 ### Install the dependencies
+```bash
 npm install
-
+```
 ---
 
 Explore the code and implement your own data structures and algorithms!
