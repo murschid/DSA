@@ -5,7 +5,7 @@ class Node {
 	}
 }
 
-class LinkedList {
+class SinglyLinkedList {
 	constructor() {
 		this.head = null;
 		this.size = 0;
@@ -28,7 +28,7 @@ class LinkedList {
 		this.size++;
 	}
 
-	append(value) {
+	append(value) { //push
 		const node = new Node(value);
 		if (this.isEmpty()) {
 			this.head = node;
@@ -95,7 +95,7 @@ class LinkedList {
 	}
 }
 
-const list = new LinkedList();
+const list = new SinglyLinkedList();
 console.log(`List is enpty? ${list.isEmpty()}`);
 console.log(`List size: ${list.getSize()}`);
 list.append(5);

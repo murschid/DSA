@@ -1,3 +1,4 @@
+// this is the binary search tree implementation
 class Node {
 	constructor(value) {
 		this.value = value;
@@ -6,7 +7,7 @@ class Node {
 	}
 }
 
-class BinarySearchTree {
+class Tree {
 	constructor() {
 		this.root = null;
 	};
@@ -138,12 +139,12 @@ class BinarySearchTree {
 	}
 }
 
-const bst = new BinarySearchTree();
-console.log(bst.isEmpty());
-bst.insert(10);
-bst.insert(5);
-bst.insert(15);
-bst.insert(3);
-bst.levelOrder();
-bst.delete(3);
-bst.levelOrder();
+const tree = new Tree();
+console.log(tree.isEmpty());
+tree.insert(10);
+tree.insert(5);
+tree.insert(15);
+tree.insert(3);
+tree.levelOrder();
+tree.delete(3);
+tree.levelOrder();
