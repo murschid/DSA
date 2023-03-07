@@ -26,7 +26,7 @@ class Graph {
 	}
 
 	removeVertex(vertex) {
-		if(!this.adjacencyList[vertex]) {
+		if (!this.adjacencyList[vertex]) {
 			return;
 		}
 		for (let adjacentVertex of this.adjacencyList[vertex]) {
